@@ -1,0 +1,105 @@
+ body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background: #ffffff;
+        padding: 40px 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 450px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    form h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    label {
+        font-weight: 500;
+        color: #444;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+        margin-bottom: 20px;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #74ebd5;
+        box-shadow: 0 0 10px rgba(116, 235, 213, 0.4);
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+        background-image: url("https://cdn-icons-png.flaticon.com/512/927/927667.png");
+        background-repeat: no-repeat;
+        background-position: right 20px top 20px;
+        background-size: 40px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* Add a quotation mark effect to the message box */
+    textarea::before {
+        content: "“";
+        font-size: 40px;
+        color: #74ebd5;
+        position: absolute;
+        margin-left: -25px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background: linear-gradient(135deg, #56ab2f, #a8e063);
+        color: #fff;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        letter-spacing: 1px;
+    }
+
+    input[type="submit"]:hover {
+        background: linear-gradient(135deg, #a8e063, #56ab2f);
+        transform: scale(1.03);
+        box-shadow: 0 6px 20px rgba(86, 171, 47, 0.4);
+    }
+
+    .footer-text {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+        color: #555;
+    }
